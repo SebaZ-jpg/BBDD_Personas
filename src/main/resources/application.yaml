@@ -1,0 +1,26 @@
+
+server:
+  port: 9090
+
+spring:
+  application:
+    name: personas
+
+  datasource:
+    url: jdbc:h2:mem:persona;DB_CLOSE_DELAY=-1
+    username: sa
+    password: ""
+    driver-class-name: org.h2.Driver
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
