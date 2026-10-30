@@ -10,15 +10,7 @@ spring:
     url: jdbc:postgresql://localhost:5676/postgres
     username: postgres
     password: secret
-#    driver-class-name: org.h2.Driver
-#
-#  h2:
-#    console:
-#      enabled: true
-#      path: /h2-console
-#
   jpa:
-#    database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: update
     show-sql: true
